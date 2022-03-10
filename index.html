@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <title>Number Guessing Game</title>
+  <style>
+.mid{
+  background: rgb(250, 250, 250);
+  /* margin-top: 80%; */
+  /* padding:70px; */
+}
+.play-again{
+  color: black;
+  border-color: black;
+  background: red;
+}
+#main{
+  background-color: rgb(10, 8, 136);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p{
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row " id="main"> 
+<div class="col-7 col-md-4 m-auto b p-5 text-center mid my-3" >
+   
+     
+    <div 
+     id="game">
+      <h1 class="text-center w-100  bg-dark text-light py-3">Number Guesser</h1>
+      <p>Guess a number between <span class="text-primary min-num"></span> and <span class=" text-primary max-num"></span><span class=" text-danger nameE"></span></p>
+      <input type="number" id="guess-input" placeholder="Enter your guess...">
+      <input type="submit"  class=" text-info " value="Submit" id="guess-btn">
+      <p class="message"></p>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
